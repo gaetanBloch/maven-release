@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
@@ -12,9 +12,26 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.report.outputEncoding>UTF-8</project.report.outputEncoding>
     <java.version>11</java.version>
+    <project.scm.id>github</project.scm.id>
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
   </properties>
 
+  <scm>
+    <developerConnection>
+      scm:git:https://github.com/gaetanBloch/maven-release.git
+    </developerConnection>
+    <url>https://github.com/gaetanBloch/maven-release</url>
+  </scm>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <version>3.0.0-M1</version>
+      </plugin>
+    </plugins>
+  </build>
 </project>
 
