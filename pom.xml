@@ -4,7 +4,7 @@
 
   <groupId>com.gbloch</groupId>
   <artifactId>maven-release</artifactId>
-  <version>1.0</version>
+  <version>1.1-SNAPSHOT</version>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -20,7 +20,7 @@
       scm:git:https://github.com/gaetanBloch/maven-release.git
     </developerConnection>
     <url>https://github.com/gaetanBloch/maven-release</url>
-    <tag>maven-release-1.0</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <build>
