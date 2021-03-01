@@ -1,2 +1,2 @@
 # maven-release
-Usages of the Maven release plugin
+Usages of the Maven release plugin with circleci
